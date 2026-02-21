@@ -1,4 +1,4 @@
-# 🌫️ LotHub - O Hub Sobre a Névoa
+#  LotHub - O Hub Sobre a Névoa
 
 > "O lugar que não pertence a esta era. O misterioso governante acima da névoa cinza."
 
