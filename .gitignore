@@ -1,0 +1,17 @@
+# Arquivos de Sistema
+.DS_Store
+Thumbs.db
+
+# Logs e arquivos de erro
+*.log
+
+# Pastas de IDE (VS Code)
+.vscode/
+
+# Se você instalar dependências no futuro (Node/Next.js)
+node_modules/
+.next/
+dist/
+build/
+.env
+.env.local
