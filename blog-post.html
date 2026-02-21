@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Lua de Sangue - LotHub</title>
+    <!-- Fontes e CSS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">
+        <i class="fa-solid fa-eye"></i> LotHub<span class="dot">.</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Hub</a></li>
+        <li><a href="news.html">Voltar para News</a></li>
+      </ul>
+    </nav>
+
+    <!-- Imagem de Destaque do Artigo (Sem texto por cima, estilo banner) -->
+    <div
+      style="
+        height: 40vh;
+        background: url(&quot;https://w.wallhaven.cc/full/pk/wallhaven-pkvw83.jpg&quot;)
+          center/cover no-repeat;
+        position: relative;
+      "
+    >
+      <div
+        style="
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 50%;
+          background: linear-gradient(to top, #0a0a0a, transparent);
+        "
+      ></div>
+    </div>
+
+    <div class="article-container">
+      <!-- Conteúdo Principal -->
+      <main class="article-content">
+        <header class="article-header">
+          <div
+            style="
+              color: var(--primary-crimson);
+              font-weight: bold;
+              margin-bottom: 10px;
+            "
+          >
+            UPDATE / TIBIA
+          </div>
+          <h1 class="article-title">
+            A Lua de Sangue: Mudanças no Sistema de PvP e Tasks
+          </h1>
+          <div style="color: #666; font-size: 0.9rem">
+            Por
+            <strong style="color: var(--primary-gold)">The World</strong> &bull;
+            21 de Fevereiro de 2026
+          </div>
+        </header>
+
+        <div class="article-body">
+          <p>Caros Beyonders,</p>
+          <p>
+            A névoa se dissipou brevemente e as constelações mudaram de posição.
+            Isso significa que o equilíbrio de poder no servidor
+            <strong>Tibia Old Era</strong> foi alterado.
+          </p>
+
+          <p>
+            Notamos que muitas guildas estavam abusando do sistema de "Power
+            Abuse" em jogadores iniciantes. Para manter a saúde do ecossistema e
+            atrair novos adeptos para nosso caminho, as seguintes regras foram
+            implementadas.
+          </p>
+
+          <blockquote>
+            "Aquele que mata sem honra, morrerá sem glória. A perda de
+            experiência para mortes injustificadas (Red Skull) foi dobrada."
+          </blockquote>
+
+          <h2>Mudanças no Skull System</h2>
+          <p>
+            Agora, o sistema funciona com base na "Corrupção". Quanto mais
+            jogadores inocentes você eliminar, mais corrompida sua alma ficará.
+          </p>
+          <ul>
+            <li>
+              <strong>White Skull:</strong> Duração reduzida para 10 minutos.
+            </li>
+            <li>
+              <strong>Red Skull:</strong> Agora perde todos os itens ao morrer,
+              sem exceção (Amulet of Loss não funcionará).
+            </li>
+            <li>
+              <strong>Black Skull:</strong> O personagem recebe 50% a mais de
+              dano de monstros.
+            </li>
+          </ul>
+
+          <img
+            src="https://w.wallhaven.cc/full/vg/wallhaven-vg88p5.jpg"
+            alt="Exemplo de PvP"
+            class="article-img"
+          />
+          <p style="text-align: center; font-size: 0.8rem; color: #666">
+            Figura 1: A nova arena de Thais.
+          </p>
+
+          <h2>Novas Recompensas de Task</h2>
+          <p>
+            Para incentivar a caça, as tasks de monstros de alto nível (Demons,
+            Behemoths) agora dropam <em>"Ancient Coins"</em>, que podem ser
+            trocadas na loja por cosméticos visuais.
+          </p>
+
+          <p>Que a sorte esteja com vocês.</p>
+        </div>
+      </main>
+
+      <!-- Sidebar (Barra Lateral) -->
+      <aside class="sidebar">
+        <!-- Widget: Últimas Notícias -->
+        <div class="sidebar-widget">
+          <h3 class="widget-title">Últimos Relatórios</h3>
+          <ul class="latest-list">
+            <li>
+              <a href="#">Invasão de Rayquaza</a>
+              <span>Há 2 dias &bull; Evento</span>
+            </li>
+            <li>
+              <a href="#">Manutenção Semanal</a>
+              <span>Há 5 dias &bull; Sistema</span>
+            </li>
+            <li>
+              <a href="#">Vencedores do Torneio</a>
+              <span>Há 1 semana &bull; Comunidade</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Widget: Links Rápidos -->
+        <div class="sidebar-widget">
+          <h3 class="widget-title">Links Úteis</h3>
+          <ul class="latest-list">
+            <li>
+              <a href="#"
+                ><i class="fa-brands fa-discord"></i> Entrar no Discord</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-cart-shopping"></i> Loja de Doação</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-book"></i> Regras do Servidor</a
+              >
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div
+        style="
+          text-align: center;
+          padding: 40px;
+          border-top: 1px solid #222;
+          margin-top: 50px;
+        "
+      >
+        <p style="color: #666">LotHub &copy; 2026</p>
+      </div>
+    </footer>
+  </body>
+</html>

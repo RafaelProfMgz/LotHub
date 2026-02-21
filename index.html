@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LotHub - O Hub Sobre a Névoa</title>
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Ícones -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- CSS Linkado -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Efeito de Fundo Global (Noise + Névoa) -->
+    <div class="background-overlay"></div>
+
+    <!-- Navegação -->
+    <nav class="navbar">
+      <div class="logo">
+        <!-- O Logo leva para o início -->
+        <a href="index.html" style="text-decoration: none; color: inherit">
+          <i class="fa-solid fa-eye logo-icon"></i> LotHub<span class="dot"
+            >.</span
+          >
+        </a>
+      </div>
+
+      <ul class="nav-links">
+        <!-- Garante que vá para o topo da Home -->
+        <li><a href="index.html" class="active">O Hub</a></li>
+
+        <!-- Leva para a seção de jogos na Home (funciona mesmo vindo de outra página) -->
+        <li><a href="index.html#games">Caminhos (Jogos)</a></li>
+
+        <!-- Leva para a nova página de listagem de notícias -->
+        <li><a href="news.html">O Tarot (Notícias)</a></li>
+
+        <!-- Link do Discord -->
+        <li>
+          <a
+            href="https://discord.gg/seu-link-aqui"
+            target="_blank"
+            class="discord-link"
+          >
+            <i class="fa-brands fa-discord"></i> Discord
+          </a>
+        </li>
+      </ul>
+
+      <div class="mobile-menu-btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </nav>
+
+    <!-- Hero Section: O Espaço acima da Névoa -->
+    <section id="hero" class="hero">
+      <div class="crimson-moon"></div>
+      <!-- A Lua Carmesim -->
+
+      <div class="hero-content">
+        <p class="honorific-name">"O Hub que não pertence a esta era..."</p>
+        <h1>LOTM <span class="highlight">HUSTBI</span></h1>
+        <p class="subtitle">
+          O misterioso governante acima da névoa cinza, trazendo de volta a
+          glória dos mundos esquecidos.
+          <br />Tibia, Pokémon e lendas antigas aguardam sua ascensão.
+        </p>
+
+        <div class="cta-group">
+          <a href="#games" class="btn btn-primary">
+            <span class="btn-text">Iniciar Sequência</span>
+            <span class="btn-glitch"></span>
+          </a>
+          <a href="#" class="btn btn-secondary">
+            <span class="btn-text">Ler as Escrituras (Wiki)</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Névoa Animada (CSS) -->
+      <div class="fog-container">
+        <div class="fog-img fog-img-first"></div>
+        <div class="fog-img fog-img-second"></div>
+      </div>
+    </section>
+
+    <!-- Seção de Jogos: Os Caminhos Beyonder -->
+    <section id="games" class="games-section">
+      <div class="section-header">
+        <h2 class="section-title">Escolha seu Caminho</h2>
+        <div class="divider-gold"></div>
+        <p>Cada servidor é uma nova poção para digerir.</p>
+      </div>
+
+      <div class="games-grid">
+        <!-- CARD TIBIA -->
+        <article class="game-card active-server">
+          <div class="card-status online">
+            <span class="pulse"></span> Névoa Dispersa (Online)
+          </div>
+          <div
+            class="card-image"
+            style="
+              background-image: url(&quot;https://w.wallhaven.cc/full/pk/wallhaven-pkvw83.jpg&quot;);
+            "
+          >
+            <div class="overlay"></div>
+          </div>
+          <div class="card-content">
+            <h3>Tibia: Old Era</h3>
+            <p class="flavor-text">"O Caminho do Tirano"</p>
+            <p class="description">
+              Retorne às raízes. Mapa 7.4 com mecânicas modernas. PvP brutal
+              onde apenas os fortes sobrevivem à corrupção.
+            </p>
+            <div class="card-stats">
+              <span><i class="fa-solid fa-users"></i> 142 Beyonders</span>
+              <span><i class="fa-solid fa-clock"></i> 24ms</span>
+            </div>
+            <a href="#" class="btn-card">Entrar no Mundo</a>
+          </div>
+        </article>
+
+        <!-- CARD POKETIBIA -->
+        <article class="game-card active-server">
+          <div class="card-status online">
+            <span class="pulse"></span> Névoa Dispersa (Online)
+          </div>
+          <div
+            class="card-image"
+            style="
+              background-image: url(&quot;https://w.wallhaven.cc/full/eo/wallhaven-eozjjk.jpg&quot;);
+            "
+          >
+            <div class="overlay"></div>
+          </div>
+          <div class="card-content">
+            <h3>PokéWorld: Mystery</h3>
+            <p class="flavor-text">"O Sonho do Visionário"</p>
+            <p class="description">
+              Monstros de outra dimensão invadiram a realidade. Dome-os e
+              utilize seus poderes espirituais para ascender.
+            </p>
+            <div class="card-stats">
+              <span><i class="fa-solid fa-users"></i> 310 Beyonders</span>
+              <span><i class="fa-solid fa-clock"></i> 18ms</span>
+            </div>
+            <a href="#" class="btn-card">Entrar no Mundo</a>
+          </div>
+        </article>
+
+        <!-- CARD MU ONLINE (Futuro) -->
+        <article class="game-card future-server">
+          <div class="card-status soon">
+            <i class="fa-solid fa-lock"></i> Selado
+          </div>
+          <div
+            class="card-image grayscale"
+            style="
+              background-image: url(&quot;https://w.wallhaven.cc/full/lq/wallhaven-lq99q2.jpg&quot;);
+            "
+          >
+            <div class="overlay"></div>
+          </div>
+          <div class="card-content">
+            <h3>MU Online</h3>
+            <p class="flavor-text">"Asas de Luz"</p>
+            <p class="description">
+              O selo está enfraquecendo. Em breve, as armaduras douradas
+              brilharão novamente no continente perdido.
+            </p>
+            <button class="btn-card disabled">Aguarde a Revelação</button>
+          </div>
+        </article>
+
+        <!-- CARD NARUTO (Futuro) -->
+        <article class="game-card future-server">
+          <div class="card-status soon">
+            <i class="fa-solid fa-lock"></i> Selado
+          </div>
+          <div
+            class="card-image grayscale"
+            style="
+              background-image: url(&quot;https://w.wallhaven.cc/full/vg/wallhaven-vg88p5.jpg&quot;);
+            "
+          >
+            <div class="overlay"></div>
+          </div>
+          <div class="card-content">
+            <h3>Naruto Shinobi</h3>
+            <p class="flavor-text">"O Caminho Ninja"</p>
+            <p class="description">
+              A Grande Guerra se aproxima. Escolha sua vila e prepare seu
+              chakra.
+            </p>
+            <button class="btn-card disabled">Aguarde a Revelação</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Seção de Notícias (Placeholder para CMS) -->
+    <section id="news" class="news-section">
+      <div class="section-header">
+        <h2 class="section-title">O Clube de Tarot</h2>
+        <div class="divider-gold"></div>
+      </div>
+
+      <div class="news-container">
+        <!-- Item de Notícia -->
+        <div class="news-item">
+          <div class="news-date">
+            <span class="day">21</span>
+            <span class="month">OUT</span>
+          </div>
+          <div class="news-content">
+            <h4>Patch Notes: A Lua de Sangue</h4>
+            <p>
+              Novas criaturas adicionadas ao respawn de Venore. O sistema de
+              tasks foi reformulado para garantir recompensas justas.
+            </p>
+          </div>
+          <a href="#" class="read-more"
+            ><i class="fa-solid fa-arrow-right"></i
+          ></a>
+        </div>
+
+        <!-- Item de Notícia -->
+        <div class="news-item">
+          <div class="news-date">
+            <span class="day">15</span>
+            <span class="month">OUT</span>
+          </div>
+          <div class="news-content">
+            <h4>Novo Servidor: Poketibia Alpha</h4>
+            <p>
+              O servidor está aberto para testes. Reportem bugs no Discord para
+              ganhar pontos de contribuição.
+            </p>
+          </div>
+          <a href="#" class="read-more"
+            ><i class="fa-solid fa-arrow-right"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">LotHub.</div>
+        <p>
+          "Nós salvamos a humanidade apenas de passagem."<br />
+          Este site é um projeto de fã. Tibia, Pokémon e Mu Online são marcas
+          registradas de seus proprietários.
+        </p>
+        <div class="socials">
+          <a href="#"><i class="fa-brands fa-discord"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script>
+    const mobileBtn = document.querySelector(".mobile-menu-btn");
+    const navLinks = document.querySelector(".nav-links");
+
+    mobileBtn.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+
+      // Alterna o ícone entre Barras e X
+      const icon = mobileBtn.querySelector("i");
+      if (icon.classList.contains("fa-bars")) {
+        icon.classList.remove("fa-bars");
+        icon.classList.add("fa-times");
+      } else {
+        icon.classList.remove("fa-times");
+        icon.classList.add("fa-bars");
+      }
+    });
+  </script>
+</html>

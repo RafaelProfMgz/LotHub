@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notícias - LotHub</title>
+    <!-- Fontes e CSS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">
+        <i class="fa-solid fa-eye"></i> LotHub<span class="dot">.</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Hub</a></li>
+        <li><a href="index.html#games">Caminhos</a></li>
+        <li><a href="news.html" class="active">The Observer</a></li>
+      </ul>
+      <div class="mobile-menu-btn"><i class="fa-solid fa-bars"></i></div>
+    </nav>
+
+    <!-- Header Específico -->
+    <header class="page-hero">
+      <h1 class="page-title">Crônicas da Névoa</h1>
+      <p style="color: #ccc; margin-top: 10px; font-style: italic">
+        "Onde o passado é registrado e o futuro é previsto."
+      </p>
+    </header>
+
+    <!-- Filtros -->
+    <section class="category-filter">
+      <button class="filter-btn active">Todas</button>
+      <button class="filter-btn">Tibia (Tyrant)</button>
+      <button class="filter-btn">Poketibia (Visionary)</button>
+      <button class="filter-btn">Comunidade</button>
+    </section>
+
+    <!-- Grade de Notícias -->
+    <main class="news-grid-container">
+      <!-- Notícia 1 (Tibia) -->
+      <article class="news-card">
+        <div
+          class="news-thumb"
+          style="
+            background-image: url(&quot;https://w.wallhaven.cc/full/pk/wallhaven-pkvw83.jpg&quot;);
+          "
+        >
+          <span class="news-tag">Update</span>
+        </div>
+        <div class="news-body">
+          <div class="news-meta">
+            <span><i class="fa-solid fa-calendar"></i> 21 Fev 2026</span>
+            <span><i class="fa-solid fa-user"></i> The World</span>
+          </div>
+          <h3>A Lua de Sangue: Mudanças no PvP</h3>
+          <p class="news-excerpt">
+            As regras do combate foram alteradas. O sistema de skulls agora pune
+            severamente aqueles que matam inocentes sem justificativa.
+          </p>
+          <!-- Link para o post completo -->
+          <a href="blog-post.html" class="read-btn"
+            >Ler Relatório <i class="fa-solid fa-arrow-right"></i
+          ></a>
+        </div>
+      </article>
+
+      <!-- Notícia 2 (Poketibia) -->
+      <article class="news-card">
+        <div
+          class="news-thumb"
+          style="
+            background-image: url(&quot;https://w.wallhaven.cc/full/eo/wallhaven-eozjjk.jpg&quot;);
+          "
+        >
+          <span class="news-tag">Evento</span>
+        </div>
+        <div class="news-body">
+          <div class="news-meta">
+            <span><i class="fa-solid fa-calendar"></i> 18 Fev 2026</span>
+            <span><i class="fa-solid fa-user"></i> Justice</span>
+          </div>
+          <h3>Invasão Lendária: Rayquaza</h3>
+          <p class="news-excerpt">
+            O dragão dos céus desceu sobre a cidade de Saffron. Preparem suas
+            Master Balls e organizem suas equipes para o ataque.
+          </p>
+          <a href="blog-post.html" class="read-btn"
+            >Ler Relatório <i class="fa-solid fa-arrow-right"></i
+          ></a>
+        </div>
+      </article>
+
+      <!-- Notícia 3 (Geral) -->
+      <article class="news-card">
+        <div
+          class="news-thumb"
+          style="
+            background-image: url(&quot;https://w.wallhaven.cc/full/qz/wallhaven-qzpvzq.jpg&quot;);
+          "
+        >
+          <span class="news-tag">Manutenção</span>
+        </div>
+        <div class="news-body">
+          <div class="news-meta">
+            <span><i class="fa-solid fa-calendar"></i> 10 Fev 2026</span>
+            <span><i class="fa-solid fa-user"></i> The Fool</span>
+          </div>
+          <h3>Correção de Distorções (Bug Fixes)</h3>
+          <p class="news-excerpt">
+            Corrigimos o bug onde os NPCs paravam de responder. A estabilidade
+            da conexão também foi aprimorada em 15%.
+          </p>
+          <a href="blog-post.html" class="read-btn"
+            >Ler Relatório <i class="fa-solid fa-arrow-right"></i
+          ></a>
+        </div>
+      </article>
+
+      <!-- Notícia 4 (Mu Online Teaser) -->
+      <article class="news-card">
+        <div
+          class="news-thumb"
+          style="
+            background-image: url(&quot;https://w.wallhaven.cc/full/lq/wallhaven-lq99q2.jpg&quot;);
+            filter: grayscale(80%);
+          "
+        >
+          <span class="news-tag" style="background: #333; color: #fff"
+            >Spoiler</span
+          >
+        </div>
+        <div class="news-body">
+          <div class="news-meta">
+            <span><i class="fa-solid fa-calendar"></i> 01 Fev 2026</span>
+            <span><i class="fa-solid fa-user"></i> The Sun</span>
+          </div>
+          <h3>O Retorno de MU: Primeiras Imagens</h3>
+          <p class="news-excerpt">
+            Um vislumbre das novas asas Level 4 que estarão disponíveis no
+            lançamento do nosso servidor clássico de MU Online.
+          </p>
+          <a href="blog-post.html" class="read-btn"
+            >Ler Relatório <i class="fa-solid fa-arrow-right"></i
+          ></a>
+        </div>
+      </article>
+    </main>
+
+    <footer>
+      <div style="text-align: center; color: #555; padding: 20px">
+        LotHub &copy; 2026
+      </div>
+    </footer>
+  </body>
+</html>
